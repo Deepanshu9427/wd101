@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/output.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body class="flex flex-col items-center font-serif h-screen w-screen">
+    <div class="flex flex-col justify-around items-center mt-3 w-1/3 h-2/5 shadow-lg border-2  rounded-lg">
+    <h1 class="font-extrabold text-lg text-center">Registration Form</h1>
+    <form class=" text-black flex flex-col justify-around h-4/5 w-4/5" id="userform">
+         <div class="flex justify-between">
+            <label>Name</label>
+            <input type="text" id="name" placeholder="Enter full Name" class="bg-gray-100  w-40 rounded-md " required >
+         </div>
+        <div class="flex justify-between">
+            <label>Email</label>
+            <input type="email" placeholder="Enter email" 
+             class="bg-gray-100 w-40 rounded-md" id="email" required>
+        </div>
+        <div class="flex justify-between">
+            <label >Password</label>
+            <input type="password" placeholder="Enter password" id="password" class="bg-gray-100 w-40 rounded-md" required>
+        </div>
+        <div class="flex justify-between">
+            <label >Date of Birth </label>
+            <input type="date" class="bg-gray-100 w-40 rounded-md " id="dob" required>
+        </div>
+        <div >
+            <input type="checkbox" id="check" required>
+            <label>Accept Terms & Conditions</label>
+        </div>
+        <div>
+            <button type="submit"  class="bg-green-400 rounded-md w-16 h-12 items-center">Submit</button>
+        </div>
+        
+    </form>  
+    </div>
+    <div id="show_data" class=" flex flex-col justify-around items-center  text-sm shadow-lg border-2 w-1/2 rounded-lg mt-5">
+        <h1 class=" font-bold">User Details</h1>
+    <table class="border w-full">
+      <tr class="border rounded-lg text-center ">
+         <th class="border rounded-lg text-center">Name</th>
+         <th class="border rounded-lg text-center">Email</th>
+         <th class="border rounded-lg text-center">Password</th>
+         <th class="border rounded-lg text-center">Dob</th>
+         <th class="border rounded-lg text-center">Accepted terms?</th>
+      </tr>
+    <table> 
+    </div>
+   
+    <script src="index.js"></script>
+</body>
+</html>
