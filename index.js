@@ -1,4 +1,4 @@
-
+localStorage.clear();
 const retrievedata = () =>{
     let entries = localStorage.getItem('user_details');
     if(entries) entries = JSON.parse(entries);
