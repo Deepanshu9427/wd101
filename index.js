@@ -1,4 +1,12 @@
-
+let dobInput = document.getElementById('dob');
+const setDateConstraints = () => {
+    const today = new Date();
+    const minDate = new Date(today.getFullYear() - 55, today.getMonth(), today.getDate());
+    const maxDate = new Date(today.getFullYear() - 18, today.getMonth(), today.getDate());
+    dobInput.min = minDate.toISOString().split("T")[0];
+    dobInput.max = maxDate.toISOString().split("T")[0];
+};
+window.onload = setDateConstraints();
 const retrievedata = () =>{
     let entries = localStorage.getItem('user_details');
     if(entries) entries = JSON.parse(entries);
